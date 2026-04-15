@@ -1,0 +1,110 @@
+/* Root Variables */
+:root {
+  --bg: #f9fafb;
+  --fg: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --card: #ffffff;
+  --primary: #6366f1;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Container */
+.wrap {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Muted text */
+.muted {
+  color: var(--muted);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Inputs */
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+/* Button */
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  width: auto;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List Item */
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
